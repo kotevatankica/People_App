@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #226bbe;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  z-index: 200;
+}
+.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #226bbe;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 90vh;
+  z-index: -10;
+}
+.splash .user1 {
+  font-size: 100px;
+}
+.splash .user2 {
+  font-size: 80px;
+}
+
+header {
+  background-color: #226bbe;
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+.title-p {
+  color: white;
+  margin-left: 90px;
+  margin-bottom: 35px;
+  margin-top: 120px;
+  font-size: 30px;
+}
+.icon-right {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+.icon-left {
+  position: absolute;
+  left: 0;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+header > div {
+  text-align: center;
+  margin: auto;
+  line-height: 5px;
+}
+
+ul {
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  list-style-type: none;
+}
+.f-data li {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(158, 154, 154);
+  padding-bottom: 15px;
+  color: rgb(158, 154, 154);
+  font-size: 16px;
+}
+.s-data {
+  display: flex;
+  float: right;
+  color: black;
+  margin-right: 15px;
+  font-size: 22px;
+}
+
+#output li {
+  padding-bottom: 15px;
+  color: rgb(158, 154, 154);
+  display: flex;
+}
+.inner-o {
+  border-bottom: 1px solid rgb(158, 154, 154);
+  width: 100%;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding-bottom: 14px;
+}
+.inner-name {
+  color: black;
+}
+.inner-eye {
+  float: right;
+  margin-right: 10px;
+}
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #888888;
+}
+#avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #888888;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+.addtolist {
+  background-color: #226bbe;
+  border-radius: 30px;
+  font-size: 15px;
+  color: white;
+  padding: 15px 115px;
+  border: 1px solid #226bbe;
+  box-shadow: 5px 10px 8px #888888;
+}
+@media screen and (max-width: 768px) {
+  ul {
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+  }
+  .title-p {
+    margin-top: 140px;
+    font-size: 25px;
+  }
+  .addtolist {
+    padding: 10px 100px;
+    font-size: 14px;
+  }
+  .f-data li {
+    font-size: 16px;
+  }
+  .s-data {
+    margin-right: 0px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  header > div {
+    line-height: 0;
+  }
+  header {
+    height: 180px;
+  }
+  .title-p {
+    margin-top: 140px;
+    font-size: 20px;
+  }
+  ul {
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+  }
+  .avatar-img {
+    width: 45px;
+    height: 45px;
+  }
+  .inner-o {
+    margin-top: 0;
+    margin-right: 5px;
+  }
+  .addtolist {
+    border-radius: 40px;
+    padding: 10px 100px;
+    font-size: 13px;
+  }
+  .f-data li {
+    font-size: 14px;
+  }
+  .s-data {
+    margin-right: 0px;
+    font-size: 17px;
+  }
+}
