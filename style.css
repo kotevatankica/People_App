@@ -7,6 +7,10 @@ body {
   min-height: 100vh;
 }
 
+#form {
+  padding-bottom: 0;
+}
+
 .splash {
   position: fixed;
   top: 0;
@@ -76,22 +80,37 @@ header > div {
   line-height: 5px;
 }
 
+.full-name {
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: 500;
+}
+#username1 {
+  color: rgb(172 170 170);
+  font-size: 19px;
+}
+
 ul {
   padding-inline-start: 20px;
-  padding-inline-end: 20px;
+  padding-inline-end: 0;
   list-style-type: none;
+}
+.f-data {
+  padding-inline-end: 20px;
 }
 .f-data li {
   margin-bottom: 30px;
+  margin-top: 30px;
   border-bottom: 1px solid rgb(158, 154, 154);
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   color: rgb(158, 154, 154);
   font-size: 16px;
+  font-weight: 600;
 }
 .s-data {
   display: flex;
   float: right;
-  color: black;
+  color: #3b3a3a;
   margin-right: 15px;
   font-size: 22px;
 }
@@ -108,12 +127,19 @@ ul {
   margin-top: 5px;
   padding-bottom: 14px;
 }
+.inner-eye .fa-eye {
+  color: rgb(158, 154, 154);
+}
 .inner-name {
-  color: black;
+  color: #3b3a3a;
+  font-weight: 600;
+}
+.inner-username {
+  font-weight: lighter;
 }
 .inner-eye {
   float: right;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .avatar-img {
   width: 50px;
@@ -126,7 +152,7 @@ ul {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 2px solid white;
   background-color: #888888;
 }
 
@@ -136,6 +162,10 @@ footer {
   width: 100%;
   text-align: center;
   margin: auto;
+  margin-bottom: 15px;
+}
+footer .fa-plus {
+  margin-right: 15px;
 }
 .addtolist {
   background-color: #226bbe;
@@ -149,7 +179,7 @@ footer {
 @media screen and (max-width: 768px) {
   ul {
     padding-inline-start: 8px;
-    padding-inline-end: 8px;
+    padding-inline-end: 0;
   }
   .title-p {
     margin-top: 140px;
@@ -166,6 +196,9 @@ footer {
     margin-right: 0px;
     font-size: 19px;
   }
+  .f-data {
+    padding-inline-end: 8px;
+  }
 }
 
 @media screen and (max-width: 426px) {
@@ -173,15 +206,15 @@ footer {
     line-height: 0;
   }
   header {
-    height: 180px;
+    height: 160px;
   }
   .title-p {
-    margin-top: 140px;
+    margin-top: 110px;
     font-size: 20px;
   }
   ul {
     padding-inline-start: 10px;
-    padding-inline-end: 10px;
+    padding-inline-end: 0;
   }
   .avatar-img {
     width: 45px;
@@ -202,5 +235,23 @@ footer {
   .s-data {
     margin-right: 0px;
     font-size: 17px;
+  }
+  .full-name {
+    font-size: 18px;
+  }
+  #username1 {
+    font-size: 14px;
+  }
+
+  .icon-left {
+    font-size: 15px;
+  }
+  .icon-right {
+    font-size: 15px;
+    width: 30px;
+  }
+  #avatar {
+    width: 70px;
+    height: 70px;
   }
 }

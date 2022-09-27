@@ -29,7 +29,7 @@ showUsers = (data) => {
   output.innerHTML += `<li><img class="avatar-img" src="${data.avatar}">
   <div class="inner-o">
     <span class="inner-name">${data.first_name} ${data.last_name}</span> <br>
-    <span>${data.email}</span>
+    <span class="inner-username">${data.email}</span>
     <span class="inner-eye"><a href="form.html?${data.id}"><i class="fa-solid fa-eye"></i></a></span>
   </div></li>`;
 };

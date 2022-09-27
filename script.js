@@ -39,7 +39,7 @@ showRandomUserData = (data) => {
 
   img.src = `${data.avatar}`;
   img.classList.add("avatar");
-  avatar.innerHTML = `${data.avatar}>`;
+  avatar.innerHTML = `${data.avatar}`;
 };
 
 showRandomUserData(data);
